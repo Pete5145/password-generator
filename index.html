@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Generate a <span id="accent-text">random password</span></h1>
+        <p class="subtitle">Never use an insecure password again.</p>
+
+        <div class="input-section">
+            <input type="text" id="fname" autocomplete="off" placeholder="Enter your first name">
+            <input type="text" id="lname" autocomplete="off" placeholder="Enter your last name">
+        </div>
+
+        <div class="password-length">
+            <label for="length">Length: (8-20)</label>
+            <div class="length-control">
+                <button id="decrement">-</button>
+                <input type="number" disabled id="password-length" min="8" max="20" inputmode="numeric">
+                <button id="increment">+</button>
+            </div>
+        </div>
+        
+        <div id="display"></div>
+        
+        <div id="btn">
+            Generate password
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+        
+    </div>        
+    <script src="app.js"></script>
+</body>
+</html>

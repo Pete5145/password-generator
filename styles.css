@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #1c1c1c;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+}
+.container {
+    background-color: #273549;
+    min-height: 50vh;
+    min-width: 50vw;
+    padding: 80px;
+}
+.title {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#accent-text{
+    color: #52ff97;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    word-spacing: 5px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: inherit;
+    padding: 8px 0 20px 0;
+}
+
+.input-section {
+    display: flex;
+}
+
+.input-section > input {
+    font-size: 1rem;
+    height: 30px;
+    outline: none;
+    width: 20vw;
+}
+#lname {
+    margin-left: 20px;
+}
+.input-section > input::placeholder {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 300;
+}
+button {
+    align-items: center;
+    background: #52ff97;
+    cursor: pointer;
+    display: flex;
+    gap: 16px;
+}
+
+button:hover, 
+button:active {
+    opacity: 0.8;
+}
+
+.length-control {
+    display: flex;
+    height: 2px;
+}
+
+.length-control > input {
+    background: #273549;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 12px 3px;
+    text-align: center;
+    width: 3em;
+}
+
+.length-control > input:focus {
+    background: rgba(0,0,0,0.1);
+}
+
+.length-control > button {
+    font-weight: 500;
+    padding: 12px;
+}
+.length-control > button#decrement {
+    border-radius: 12px 0 0 12px;
+}
+
+.length-control > button#increment {
+    border-radius: 0 12px 12px 0;
+}
+
+#btn {
+    align-items: center;
+    background-color: #10bb54;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+    margin: 30px 0;
+    min-height: 30px;
+    min-width: 10vw;
+}
+
+#display {
+    min-height: 30px;
+    background-color: #01250f;
+    width: 50%;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    display: none;
+    padding-top: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 20px auto 0px auto;
+}
+
+.fa-solid {
+    padding-left: 10px;
+}
+.password-length {
+    padding: 12px 0;
+}
+
+@media screen and (max-width: 758px) {
+    .title {
+        font-size: 2rem;
+    }
+    #accent-text {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    .input-section {
+        flex-direction: column;
+    }
+    .input-section > input {
+        width: 100%;
+    }
+    .input-section > input::placeholder {
+        font-size: 1rem;
+    }
+    #lname {
+        margin: 10px 0px;
+    }
+    #btn {
+        font-size: 1rem;
+    }
+    .container {
+        height: 100%;
+        padding: 100px 50px;
+    }
+
+    html {
+        background-color: #273549;
+        height: 100%;
+    }
+
+    #display {
+        margin-top: 33px;
+        min-width: 70%;
+    }
+}
